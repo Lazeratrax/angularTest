@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  background-color: white;
+  border: 2px solid rgb(201, 198, 198);
+  margin: 0.2rem;
+  border-radius: 4px;
+  color: black;
+}
+
+.btn:focus,
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(223, 219, 219);
+  color: black;
+}
+// section__main-menu
+
+.section__main-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-menu__list-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__docs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__list-items {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
+  max-width: 13rem;
+}
