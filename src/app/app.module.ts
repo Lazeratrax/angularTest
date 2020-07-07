@@ -5,22 +5,20 @@ import {AppComponent} from './app.component'
 import {FormsModule} from '@angular/forms'
 import {HomePageComponent} from './home-page/home-page.component'
 import {AppRoutingModule} from './app-routing.module'
-import {SharedModule} from './shared/shared.module'
-import {SvgIconsDirective} from './directives/svg.icons.directives'
+import { ModalPowerMetersComponent } from './modals/modal-power-meters/modal-power-meters.component';
+import { ModalIntoductionComponent } from './modals/modal-intoduction/modal-intoduction.component';
 
-
-// С ОБЪЕКТОМ ОТДЕЛЬНОГО МОДУЛЯ НАПРМУЮ НЕ РАБОТАЕМ - ТОЛЬКО ЧЕРЕЗ РОУТЕР! 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    SvgIconsDirective
-  ],
+    ModalPowerMetersComponent,
+    ModalIntoductionComponent
+  ], 
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    SharedModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

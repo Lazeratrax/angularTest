@@ -1,22 +1,28 @@
 <nav class="navbar">
 
-  <a href="#"><strong>SRAM</strong></a>
-  <h1>LATEST NEWS: <i>Welcome to STU Online</i></h1>
+  <a class="navbar__logo" href="#"><strong>SRAM</strong></a>
+  <h1 class="navbar__title">LATEST NEWS: <i>Welcome to STU Online</i></h1>
 
-  <ul>
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">News</a></li>
-    <li routerLinkActive="active"><a routerLink="/about">Rewards</a></li>
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/"></a></li>
+  <ul class="navbar__menu">
+    <li class="navbar__menu-item">
+      <a class="navbar__menu-link" routerLink="/">News</a>
+    </li>
+    
+    <li class="navbar__menu-item" >
+      <a class="navbar__menu-link" routerLink="/">Rewards</a>
+    </li>
+   
+    <li class="navbar__menu-auth">
+      <a class="iconUser__link" routerLink="/">
+        <i class="iconUser"></i>
+      </a>
+    </li>
   </ul>
 </nav>
 
 <div class="container">
+  <i class=""></i>
   <div class="card">
-
-    <router-outlet></router-outlet>
-
+    <app-home-page></app-home-page>
   </div>
 </div>
-
-
-

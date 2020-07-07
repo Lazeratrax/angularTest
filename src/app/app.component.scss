@@ -3,6 +3,60 @@ p {
 }
 
 .navbar {
-color: white;
-background-color: black;
+  color: white;
+  background-color: black;
 }
+
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__menu-item {
+  border-right: 1px solid grey;
+  margin-right: 0.5rem;
+}
+
+.navbar__menu-link:hover,
+.navbar__menu-link:focus {
+  color: grey;
+}
+
+.iconUser__link {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.iconUser {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../assets/sprite.svg");
+  width: 18px;
+  height: 18px;
+  background-position: 0 -36px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.iconUser__link:hover,
+.iconUser__link:focus {
+  background-color: rgb(233, 230, 230);
+}
+
+//start  media
+
+@media screen and (max-width: 747px) {
+  .navbar__title {
+    display: none;
+  }
+}
+
+//end  media
